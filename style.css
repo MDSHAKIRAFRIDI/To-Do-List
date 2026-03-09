@@ -1,0 +1,156 @@
+/* ==========================
+   BODY STYLING
+   ========================== */
+
+body {
+    margin: 0; /* default margin remove kiya */
+    display: flex; /* flexbox use kiya center alignment ke liye */
+    justify-content: center; /* horizontally center karega */
+    background-color: greenyellow; /* background color set kiya */
+}
+
+/* ==========================
+   PAGE TITLE STYLING
+   ========================== */
+
+.title{
+    position: absolute;
+    top: 15%;
+    font-family: cursive;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+/* ==========================
+   FORM CONTAINER STYLING
+   ========================== */
+
+.form{
+    position: absolute; /* position control karne ke liye */
+    top: 30%; /* top se 30% niche show karega */
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.3); /* shadow effect */
+    width: 400px; /* form ki width */
+    background-color: yellow; /* form background color */
+    border-radius: 10px; /* rounded corners */
+}
+
+
+/* ==========================
+   INPUT BOX STYLING
+   ========================== */
+
+.input{
+    width: 100%; /* full width */
+    box-sizing: border-box; /* padding include karega width me */
+    padding: 20px; /* inner spacing */
+    border-radius: 10px 10px 0 0; /* top corners rounded */
+    border:none; /* border remove */
+    font-size: 20px; /* text size */
+    font-family: cursive; /* font style */
+}
+
+
+/* Placeholder text styling */
+.input::placeholder{
+    color: lightgray;
+}
+
+
+/* ==========================
+   LIST CONTAINER
+   ========================== */
+
+.list{
+    padding: 0; /* default padding remove */
+    margin: 0; /* default margin remove */
+}
+
+
+/* ==========================
+   EACH TASK (LI) STYLING
+   ========================== */
+
+.list li {
+    list-style-type: none; /* bullet points remove */
+    padding: 20px; /* spacing */
+    font-family: cursive; /* font */
+    border-top: dotted; /* dotted border */
+    border-color: darkgray;
+    position: relative; /* icons position karne ke liye */
+}
+
+
+/* ==========================
+   DELETE ICON STYLING
+   ========================== */
+
+.list li .fa-trash{
+    color: red; /* delete icon color */
+    position: absolute;
+    right: 15px; /* right side position */
+    top: 50%;
+    transform: translateY(-50%); /* vertically center */
+    cursor: pointer; /* pointer cursor */
+}
+
+
+/* ==========================
+   CHECK ICON STYLING
+   ========================== */
+
+.list li .fa-check{
+    color: green; /* check icon color */
+    position: absolute;
+    right: 40px; /* delete icon se thoda left */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+/* ==========================
+   COMPLETED TASK STYLING
+   ========================== */
+
+.list li.checked {
+    color: darkgrey; /* text color change */
+    text-decoration: line-through; /* strike-through effect */
+}
+
+
+/* completed task ka check icon color */
+.list li.checked .fa-check {
+    color: darkgrey;
+}
+
+
+/* ==========================
+   ADD BUTTON AND CLEAR BUTTON
+   ========================== */
+
+.addBtn, .clearBtn {
+    width: 100%; /* full width */
+    padding: 10px; /* spacing */
+    border: none; /* border remove */
+    background-color: black; /* button color */
+    color: white; /* text color */
+    cursor: pointer; /* pointer cursor */
+    font-family: cursive;
+}
+
+
+/* button hover effect */
+.addBtn:hover, .clearBtn:hover {
+    background-color: gray;
+}
+
+
+/* ==========================
+   TASK COUNTER STYLING
+   ========================== */
+
+.counter {
+    text-align: center; /* center align text */
+    font-family: cursive;
+    padding: 5px;
+}

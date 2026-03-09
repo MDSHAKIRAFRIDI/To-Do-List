@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding set kiya (special characters support ke liye) -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design ke liye (mobile me proper scale hoga) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title (browser tab me show hota hai) -->
+    <title>To Do List</title>
+
+    <!-- Font Awesome CDN (check aur trash icons ke liye) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- External CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!---Heading-->
+<h1 class="title">To Do List</h1>
+
+<!-- ==========================
+     MAIN TO-DO LIST CONTAINER
+     ========================== -->
+<form class="form">
+
+    <!-- Input box (user yaha task type karega) -->
+    <input 
+        type="text" 
+        class="input" 
+        placeholder="Enter Your Task"
+        autocomplete="off"
+    >
+
+    <!-- Add Task button (form submit karega aur new task add karega) -->
+    <button type="submit" class="addBtn">
+        Add Task
+    </button>
+
+    <!-- Task counter (total number of tasks show karega) -->
+    <p class="counter">
+        Total Tasks: 0
+    </p>
+
+    <!-- Clear All button (sab tasks delete karega) -->
+    <button type="button" class="clearBtn">
+        Clear All
+    </button>
+
+    <!-- Task list container (JavaScript yaha dynamically li add karega) -->
+    <ul class="list"></ul>
+
+</form>
+
+
+<!-- ==========================
+     JAVASCRIPT FILE LINK
+     ========================== -->
+<!-- Ye file To-Do List ka logic handle karegi -->
+<script src="index.js"></script>
+
+</body>
+</html>
